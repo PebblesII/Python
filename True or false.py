@@ -11,7 +11,19 @@ def Loading(timer):
         time.sleep(1)
     print("\n")
 
+def LoadingPercen(Chegada, Pogress):
+    Porcentagem = 0
+    print("Começando Download", "-_" * 30)
+    print("\n")
+    while Porcentagem <= Chegada:
+        if Porcentagem <= Chegada:
+            print(f"\rDownload [%{Porcentagem}]", end="")
+            Porcentagem += Pogress
+            time.sleep(1)
+            sys.stdout.flush()
+
 #Boolean
+
 Ligado = False
 
 print("Ligar O Computador?")
@@ -54,17 +66,9 @@ Loading(3)
 
 #Numeros
 
-Chegada = 100
-Porcentagem = 0
+
 if Ligado:
-    print("Começando Download", "-_" * 30)
-    print("\n")
-    while Porcentagem <= Chegada:
-        if Porcentagem <= Chegada:
-            print(f"\rDownload [%{Porcentagem}]", end="")
-            Porcentagem += 10
-            time.sleep(1)
-            sys.stdout.flush()
+    LoadingPercen(100, 10)
 
 #Lists
 print("\n" * 3)
