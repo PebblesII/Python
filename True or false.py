@@ -70,29 +70,29 @@ Loading(3)
 if Ligado:
     LoadingPercen(100, 10)
 
-#Lists
-print("\n" * 3)
-ListNothing = []
+    #Lists
+    print("\n" * 3)
+    ListNothing = []
 
-ListGames = ["Minesweeper", "Purple place", "Snake"]
+    ListGames = ["Minesweeper", "Purple place", "Snake"]
 
-print(f"Games Installed\n")
-for i in ListGames:
-    print(f"{i}")
-    print("--" * 30)
-    time.sleep(1)
+    print(f"Games Installed\n")
+    for i in ListGames:
+        print(f"{i}")
+        print("--" * 30)
+        time.sleep(1)
 
-print("Any new Games?")
-NewGame = input("=== ")
+    print("Any new Games?")
+    NewGame = input("=== ")
 
 
 
-print("\n")
-ListGames.append(NewGame)
+    print("\n")
+    ListGames.append(NewGame)
 
-print("-_" * 30)
-print(f"{NewGame} Downloaded")
-print("-_" * 30)
+    print("-_" * 30)
+    print(f"{NewGame} Downloaded")
+    print("-_" * 30)
 
 
 #Metodos de listas
@@ -108,3 +108,15 @@ print("-_" * 30)
 #LIST[  1:      9:     3 ]
 #print(LIST[1:9:3])
 #Output = 3 6 9
+
+
+
+
+
+
+
+
+
+
+
+
