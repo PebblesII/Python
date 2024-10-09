@@ -55,6 +55,8 @@ else:
 
 clear()
 logo()
+
+#Creating Char
 print("\n")
 TextHandler("Create a new Character")
 CharName = input(" ")
@@ -63,13 +65,20 @@ clear()
 print(f"Creating {CharName}")
 Loading(3, 3)
 
+
+#Char Status
 Charstatus = {
-    "Health": 5,
-    "Attack": 5,
-    "Agility": 5,
+    "Health": 0,
+    "Attack": 0,
+    "Agility": 0,
     "Defense": 0
 
 }
+CharXP = 0
+CharHP = 100
+CharATK = 10
+CharAGY = 30
+CharDefense = 5
 
 clear()
 
@@ -83,6 +92,7 @@ def LevelUp(Points):
         if Choice == 1:
             Charstatus["Health"] += 1
             Callstatus()
+            print(f"Health Increased {CharHP}")
             Points -= 1
         if Choice == 2:
             Charstatus["Attack"] += 1
@@ -106,6 +116,10 @@ Callstatus()
 print(f"You have 3 Points What do you want to level up")
 LevelUp(3)
 
+#GameplayLoop
 
-
-#def battle(situation):
+def battle(situation):
+    if situation == 1:
+        EnemyH = 30
+        EnemyATK = 10
+    
